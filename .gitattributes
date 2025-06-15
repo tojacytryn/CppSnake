@@ -1,2 +1,11 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+
+# Exclude raylib library files from language statistics
+libraylib.a linguist-vendored
+raylib.h linguist-vendored
+raymath.h linguist-vendored
+rlgl.h linguist-vendored
+
+# Ensure C++ files are properly detected
+*.cpp linguist-language=C++
